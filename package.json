@@ -1,0 +1,10 @@
+{
+	"name": "live-data",
+	"version": "0.0.0",
+	"author": "CoderPuppy",
+	"dependencies": {
+		"hat": "*",
+		"monotonic-timestamp": "*",
+		"through2": "*"
+	}
+}
