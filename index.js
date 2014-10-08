@@ -11,6 +11,9 @@
       this.id = hat();
       this.sources = {};
     }
+    prototype.registered = function(db){
+      return this.emit('registered', db);
+    };
     prototype.get = function(key){
       if (key != null) {
         return new Live.Pointer(this, key);

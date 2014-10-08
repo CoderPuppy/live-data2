@@ -10,6 +10,9 @@ class Live extends EE
 		@id = hat!
 		@sources = {}
 
+	registered: (db) ->
+		@emit \registered, db
+
 	get: (key) ->
 		if key?
 			new Live.Pointer(@, key)
